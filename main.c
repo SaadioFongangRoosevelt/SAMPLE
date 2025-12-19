@@ -9,14 +9,15 @@ int main()
     float coef1, coef2, coef3;
     point A, B;
     char choix;
-
-    do
-    {
         entete("TRAVAIL PERSONNEL DE L'ETUDIANT                ");
         entete("UE IT355: Algorithmique et Programmation C/Java");
         entete("23ENSPM0541 -- SAADIO FONGANG ROOSEVELT        ");
+
+    do
+    {
+        printf("\n");
         printf("\t\t1. Calcul du factoriel d'un entier\n");
-        printf("\t\t2. Elever un nombre a une puissance donnee\n");
+        printf("\t\t2. Elever un nombre entier a une puissance donnee\n");
         printf("\t\t3. Permuter le contenu de 2 variables en utilisant les pointeurs\n");
         printf("\t\t4. Resoudre une equation du second degree\n");
         printf("\t\t5. verifier si un nombre est premier ou pas\n");
@@ -37,7 +38,7 @@ int main()
         break;
     case '2':
         int valeur,pow;
-        entete("Elévation d'un nombre à une puissance donnée");
+        entete("Elévation d'un nombre entier a une puissance donnee");
         printf("Entrer le nombre: ");
         scanf("%d",&valeur);
         printf("Entrer sa puissance: ");
@@ -59,7 +60,7 @@ int main()
         entete("Resolution d'une equation du second degree");
         printf("Entrer la valeur du 1er coefficient: ");
         scanf("%f",&coef1);
-        printf("Enter la valeur du second coefficient");
+        printf("Enter la valeur du 2e coefficient: ");
         scanf("%f",&coef2);
         printf("Entrer la valeur du 3e coefficient: ");
         scanf("%f",&coef3);

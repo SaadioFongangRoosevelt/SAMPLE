@@ -34,7 +34,7 @@ void permutation(int *a, int *b)
 
 void secondDegreeSolver(float a, float b, float c)
 {
-    float discriminant = b*b - 4 *a*c;//power est deja definie plus haut
+    float discriminant = b*b - a*c*4;//power est deja definie plus haut
     float x1,x2;
     printf("Equation entree: %fx^2 + (%f)x +(%f) = 0\n",a,b,c);
     if (discriminant < 0)
@@ -42,7 +42,7 @@ void secondDegreeSolver(float a, float b, float c)
         printf("\n> Cette equation n'a pas de solution reelle.\n");
     }else if (discriminant == 0)
     {
-        float x0 = -b / a*2;
+        float x0 =(-b)/(a*2);
         printf("\n> L'equation admet une solution reelle double x0 = %.2f\n", x0);
     }
     else
